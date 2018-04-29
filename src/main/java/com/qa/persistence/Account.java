@@ -18,13 +18,13 @@ public class Account {
 	
 	private String addressLine2;
 	
-	private int accountBalance;
+	private Long accountBalance;
 	
 	public Account() {
 		
 	}
 	
-	public Account(String firstName, String secondName, String addressLine1, String addressLine2, int accountBalance) {
+	public Account(String firstName, String secondName, String addressLine1, String addressLine2, Long accountBalance) {
 	
 		this.firstName = firstName;
 		this.secondName = secondName;
@@ -61,10 +61,10 @@ public class Account {
 	public void setAddressLine2(String addressLine2) {
 		this.addressLine2 = addressLine2;
 	}
-	public int getAccountBalance() {
+	public Long getAccountBalance() {
 		return accountBalance;
 	}
-	public void setAccountBalance(int accountBalance) {
+	public void setAccountBalance(Long accountBalance) {
 		this.accountBalance = accountBalance;
 	}
 	public Long getId() {
