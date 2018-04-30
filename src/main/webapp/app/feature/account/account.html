@@ -18,9 +18,28 @@
         	</table>
         </div>
         <button class="btn"ng-click="accountCtrl.hideTable()">Hide accounts</button>
-            <button class="btn"ng-click="accountCtrl.hideTable()">Add Account</button>
-			<button class="btn"ng-click="accountCtrl.hideTable()">Change account details</button>
-			<button class="btn"ng-click="accountCtrl.hideTable()">Delete Account</button>
-			<button class="btn"ng-click="accountCtrl.hideTable()">See account</button>
+        </div>
+    <div ng-show="accountCtrl.isHidden">
+        <h3><span>Account entry</span></h3>
+        <form name="myAddChangeForm" ng-model="stringToAdd">
+            <label>First Name:
+            <input type="text" name="firstName" ng-model="firstName" required>
+            </label>
+            <label>Surname:
+            <input type="text" name="firstName" ng-model="secondName" required>
+            </label>
+            <label>Address Line 1:
+            <input type="text" name="firstName" ng-model="addressLine1" required>
+            </label>
+            <label>Address Line 2:
+            <input type="text" name="firstName" ng-model="addressLine2" required>
+            </label>
+            <label>Input your own account balance:
+            <input type="text" name="firstName" ng-model="accountBalance" required>
+            </label>
+        </form>
+        <button class="btn"ng-click="accountCtrl.addAccount(myAddChangeForm.stringToAdd)">Add Account</button>
+        <button class="btn"ng-click="accountCtrl.hideTable()">Change account details</button>
+        <button class="btn"ng-click="accountCtrl.hideTable()">Delete Account</button>
+        <button class="btn"ng-click="accountCtrl.hideTable()">See account</button>
 	</div>
-</div>

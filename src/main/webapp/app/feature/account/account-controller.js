@@ -25,7 +25,8 @@
        }
 
        function addAccount() {
-            accountService.saveAccount().then()
+        
+            accountService.saveAccount();
        }
        
        init();
